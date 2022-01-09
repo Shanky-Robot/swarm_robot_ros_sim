@@ -53,7 +53,7 @@ const double RIGHT_WHEEL_POSITION = 0.0157;  // right is positive direction
 swarm_robot_msg::two_wheel_robot current_robots;
 // time stamp for callback, used to check topic activity
 // initialize it with a negative time, so as to avoid mistaken for being active
-ros::Time two_wheel_robot_topic_timer(-TOPIC_ACTIVE_PERIOD-0.1);
+ros::Time two_wheel_robot_topic_timer(TOPIC_ACTIVE_PERIOD-0.1);
 
 // callback for getting two wheel robot information
 void twoWheelRobotCallback(const swarm_robot_msg::two_wheel_robot& input_msg) {
